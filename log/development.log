@@ -3749,3 +3749,38 @@ Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-05 13:25:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Infallible Lip Color"], ["brand", "Revlon"], ["rating", 4], ["created_at", "2015-09-05 17:57:38.593046"], ["updated_at", "2015-09-05 17:57:38.593046"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Precision Eyeliner"], ["brand", "Smashbox"], ["rating", 2], ["created_at", "2015-09-05 17:57:38.599566"], ["updated_at", "2015-09-05 17:57:38.599566"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Baked Blush"], ["brand", "Milani"], ["rating", 1], ["created_at", "2015-09-05 17:57:38.602118"], ["updated_at", "2015-09-05 17:57:38.602118"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hoola Bronzer"], ["brand", "Benefit"], ["rating", 5], ["created_at", "2015-09-05 17:57:38.604349"], ["updated_at", "2015-09-05 17:57:38.604349"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Naked Palette"], ["brand", "Urban Decay"], ["rating", 4], ["created_at", "2015-09-05 17:57:38.606467"], ["updated_at", "2015-09-05 17:57:38.606467"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Lorac Pro Palette"], ["brand", "Lorac"], ["rating", 5], ["created_at", "2015-09-05 17:57:38.608926"], ["updated_at", "2015-09-05 17:57:38.608926"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Amazonian Clay Blush"], ["brand", "Stila"], ["rating", 5], ["created_at", "2015-09-05 17:57:38.611234"], ["updated_at", "2015-09-05 17:57:38.611234"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mary-Lou Manizer"], ["brand", "theBalm"], ["rating", 5], ["created_at", "2015-09-05 17:57:38.613303"], ["updated_at", "2015-09-05 17:57:38.613303"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Shimmering Skin Perfector"], ["brand", "Becca"], ["rating", 5], ["created_at", "2015-09-05 17:57:38.615457"], ["updated_at", "2015-09-05 17:57:38.615457"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Radiant Creamy Concealer"], ["brand", "NARS"], ["rating", 3], ["created_at", "2015-09-05 17:57:38.617560"], ["updated_at", "2015-09-05 17:57:38.617560"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("name", "brand", "rating", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Eye Studio Color Tattoo Leather"], ["brand", "Maybelline"], ["rating", 4], ["created_at", "2015-09-05 17:57:38.619952"], ["updated_at", "2015-09-05 17:57:38.619952"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
