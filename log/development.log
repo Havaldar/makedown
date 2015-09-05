@@ -6972,6 +6972,7 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 0.0ms)
 >>>>>>> Stashed changes
 >>>>>>> origin/master
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2015-09-05 16:32:30 -0400
@@ -7108,6 +7109,12 @@ Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.1ms)
 Migrating to Fixes (20150905203619)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.7ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar, "last_name" varchar, "skin_tone" varchar, "skin_type" varchar, "avatar" varchar) [0m
+=======
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to Fixes (20150905203733)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar, "last_name" varchar, "skin_tone" varchar, "skin_type" varchar, "avatar" varchar) [0m
+>>>>>>> origin/master
   [1m[35m (0.1ms)[0m              SELECT sql
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
@@ -7124,6 +7131,7 @@ Migrating to Fixes (20150905203619)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
   [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")
@@ -7134,29 +7142,52 @@ Migrating to Fixes (20150905203619)
   [1m[36m (0.4ms)[0m  [1mDROP TABLE "users"[0m
   [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar, "last_name" varchar, "skin_tone" varchar, "skin_type" varchar) 
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
+=======
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","first_name","last_name","skin_tone","skin_type","avatar") VALUES (3, 'meriahoneil@gmail.com', '$2a$10$Y2SRnoavoPfnycA49sBuEOMv1n.VTCFe1kgI20q4glVwJvY3IwQfG', NULL, NULL, NULL, 3, '2015-09-05 19:21:31.183954', '2015-09-05 19:17:30.459823', '::1', '::1', '2015-09-05 19:12:51.165624', '2015-09-05 19:21:31.185478', NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","first_name","last_name","skin_tone","skin_type","avatar") VALUES (4, 'bluesmiles08@gmail.com', '$2a$10$xzOk9x2Tk.UfYXYWNPZPCuwFvVv8aagdl70EZN5NJSyHTnL0mW.Vy', NULL, NULL, '2015-09-05 20:00:30.589639', 2, '2015-09-05 20:00:30.597075', '2015-09-05 20:00:23.899388', '::1', '::1', '2015-09-05 20:00:23.895803', '2015-09-05 20:00:30.598298', NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (1.7ms)[0m  DROP TABLE "users"
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar, "last_name" varchar, "skin_tone" varchar, "skin_type" varchar) [0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+>>>>>>> origin/master
             FROM sqlite_master
             WHERE name='tindex_ausers_on_email' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='tindex_ausers_on_email' AND type='index'
+<<<<<<< HEAD
 [0m
   [1m[35m (0.1ms)[0m              SELECT sql
+=======
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+>>>>>>> origin/master
             FROM sqlite_master
             WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+<<<<<<< HEAD
 
   [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
   [1m[35m (0.0ms)[0m              SELECT sql
+=======
+[0m
+  [1m[35m (0.5ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+>>>>>>> origin/master
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
+<<<<<<< HEAD
 
   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
   [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
@@ -7166,6 +7197,16 @@ Migrating to Fixes (20150905203619)
   [1m[35m (0.2ms)[0m  DROP TABLE "ausers"
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150905203619"]]
   [1m[35m (1.1ms)[0m  commit transaction
+=======
+[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","first_name","last_name","skin_tone","skin_type") VALUES (3, 'meriahoneil@gmail.com', '$2a$10$Y2SRnoavoPfnycA49sBuEOMv1n.VTCFe1kgI20q4glVwJvY3IwQfG', NULL, NULL, NULL, 3, '2015-09-05 19:21:31.183954', '2015-09-05 19:17:30.459823', '::1', '::1', '2015-09-05 19:12:51.165624', '2015-09-05 19:21:31.185478', NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","first_name","last_name","skin_tone","skin_type") VALUES (4, 'bluesmiles08@gmail.com', '$2a$10$xzOk9x2Tk.UfYXYWNPZPCuwFvVv8aagdl70EZN5NJSyHTnL0mW.Vy', NULL, NULL, '2015-09-05 20:00:30.589639', 2, '2015-09-05 20:00:30.597075', '2015-09-05 20:00:23.899388', '::1', '::1', '2015-09-05 20:00:23.895803', '2015-09-05 20:00:30.598298', NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "ausers"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150905203733"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+>>>>>>> origin/master
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35m (0.1ms)[0m              SELECT sql
             FROM sqlite_master
@@ -7175,7 +7216,11 @@ Migrating to Fixes (20150905203619)
             FROM sqlite_temp_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
 
+<<<<<<< HEAD
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
+=======
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+>>>>>>> origin/master
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
