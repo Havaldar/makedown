@@ -2,3 +2,7 @@
 <br>
 <br>
 <%= current_user.email %>
+<%= link_to 'Edit', edit_user_registration_path %>
+<%=current_user.items.each do |item| %>
+	<%= item.name %>
+<% end %>

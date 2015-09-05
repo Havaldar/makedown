@@ -26,8 +26,8 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right" id="leftnavtabs">	
-                <li role="presentation" class="hvr-fade">Hi</li>
-				<li role="presentation" class="hvr-fade">Boo</li>			
+                <li role="presentation" class="hvr-fade"><%= link_to 'INVENTORY', items_path %></li>
+				<li role="presentation" class="hvr-fade"><%= link_to 'PROFILE', user_path(current_user.id) %></li>			
 				<li role="presentation" class="hvr-fade"><%= link_to 'SIGN OUT', destroy_user_session_path, method: :delete %></li>
             </ul>
         </div>
